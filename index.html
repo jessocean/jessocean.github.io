@@ -103,6 +103,8 @@
     }
 
     nav a {
+      display: block;
+      width: fit-content;
       font-family: var(--sans);
       font-size: 0.72rem;
       font-weight: 500;
@@ -111,12 +113,19 @@
       color: var(--text-secondary);
       text-decoration: none;
       border-bottom: 1px solid var(--rule);
-      margin: 0 12px;
+      margin: 0 auto 14px;
     }
 
     nav a:hover {
       color: var(--text);
       border-color: var(--text);
+    }
+
+    nav a .note {
+      text-transform: none;
+      letter-spacing: 0;
+      font-style: italic;
+      opacity: 0.65;
     }
 
     @media (max-width: 600px) {
@@ -136,7 +145,8 @@
     <p class="connect">Connect with us at <a href="mailto:hello@openimmanence.org">hello@openimmanence.org</a></p>
 
     <nav>
-      <a href="/wheelhouse/">Wheelhouse</a>
+      <a href="/wheelhouse/">Wheelhouse <span class="note">(on hiatus)</span></a>
+      <a href="/playlist-book/">Films for Little Minds</a>
     </nav>
   </div>
 
