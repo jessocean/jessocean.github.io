@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Then Shall We Live? Meaning in the Age of AI</title>
+  <meta name="description" content="A one-day summit on living meaningfully in a world transformed by AI. Tuesday 7 July 2026, St Gregory of Nyssa Episcopal Church, San Francisco. Hosted by the Open Immanence Society.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&display=swap');
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #faf8f5;
+      --text: #2a2a28;
+      --text-secondary: #6b6b66;
+      --accent: #7a6a4f;
+      --accent-light: #b8a88a;
+      --rule: #d8d3cb;
+      --serif: 'EB Garamond', 'Georgia', serif;
+      --sans: 'Inter', 'Helvetica Neue', sans-serif;
+    }
+
+    html {
+      font-size: 18px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--serif);
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    ::selection {
+      background: var(--accent-light);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 clamp(20px, 4vw, 48px);
+      border-left: 1px solid var(--rule);
+      border-right: 1px solid var(--rule);
+    }
+
+    /* ---- Header ---- */
+
+    header {
+      padding: 0;
+    }
+
+    .hero-img {
+      margin: 0 0 40px;
+    }
+
+    .hero-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-img figcaption {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      color: var(--text-secondary);
+      margin-top: 10px;
+      letter-spacing: 0.01em;
+    }
+
+    .eyebrow {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 18px;
+    }
+
+    header h1 {
+      font-family: var(--serif);
+      font-size: clamp(2.1rem, 6vw, 3rem);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: 0.01em;
+      margin-bottom: 12px;
+    }
+
+    header .subtitle {
+      font-family: var(--serif);
+      font-size: clamp(1.2rem, 3.4vw, 1.4rem);
+      font-style: italic;
+      color: var(--text-secondary);
+      line-height: 1.4;
+      margin-bottom: 28px;
+    }
+
+    /* ---- Event meta ---- */
+
+    .meta {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      letter-spacing: 0.02em;
+      color: var(--text);
+      line-height: 1.9;
+      margin-bottom: 28px;
+    }
+
+    .meta strong {
+      font-weight: 500;
+    }
+
+    .meta .sep {
+      color: var(--accent-light);
+      margin: 0 8px;
+    }
+
+    /* ---- Button ---- */
+
+    .button {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--bg);
+      background: var(--accent);
+      padding: 14px 32px;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: background 0.15s ease;
+    }
+
+    .button:hover {
+      background: var(--text);
+    }
+
+    .button-note {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: var(--text-secondary);
+      margin-top: 12px;
+      letter-spacing: 0.01em;
+    }
+
+    /* ---- Sections ---- */
+
+    .rule {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 56px 0;
+    }
+
+    section {
+      padding: 0;
+    }
+
+    section h2 {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 24px;
+    }
+
+    section p {
+      max-width: 640px;
+      margin: 0 auto 1.4em;
+    }
+
+    section p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ---- Question list ---- */
+
+    .questions {
+      list-style: none;
+      margin: 0;
+    }
+
+    .questions li {
+      font-size: clamp(1.15rem, 3vw, 1.3rem);
+      font-style: italic;
+      color: var(--text);
+      line-height: 1.45;
+      max-width: 540px;
+      margin: 0 auto 22px;
+    }
+
+    .questions li:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ---- Epigraph (long-form set-apart passage) ---- */
+
+    .epigraph {
+      max-width: 840px;
+      margin: 0 auto;
+      text-align: left;
+      border-left: 3px solid var(--accent-light);
+      padding-left: clamp(22px, 4vw, 38px);
+    }
+
+    .epigraph blockquote {
+      font-family: var(--sans);
+      font-style: normal;
+      font-size: clamp(1rem, 2.2vw, 1.1rem);
+      line-height: 1.8;
+      color: var(--text);
+    }
+
+    .epigraph cite {
+      display: block;
+      font-family: var(--sans);
+      font-style: normal;
+      font-size: 0.78rem;
+      letter-spacing: 0.02em;
+      color: var(--text-secondary);
+      margin-top: 22px;
+    }
+
+    .epigraph cite a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .epigraph cite a:hover {
+      color: var(--text);
+      border-color: var(--text);
+    }
+
+    /* ---- Schedule ---- */
+
+    .schedule {
+      list-style: none;
+      margin: 0 auto;
+      max-width: 560px;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+    }
+
+    .schedule li {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .schedule li:last-child {
+      border-bottom: none;
+    }
+
+    .schedule .time {
+      color: var(--accent);
+      letter-spacing: 0.01em;
+    }
+
+    .schedule .time::after {
+      content: "\2002\00B7\2002";
+      color: var(--accent-light);
+    }
+
+    .schedule .what {
+      color: var(--text);
+    }
+
+    /* ---- Attendees ---- */
+
+    .attendees {
+      list-style: none;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 44px;
+    }
+
+    .attendee {
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .attendee img {
+      width: 104px;
+      height: 104px;
+      object-fit: cover;
+      border-radius: 50%;
+      filter: grayscale(100%);
+      margin-bottom: 16px;
+    }
+
+    .attendee .name {
+      font-size: 1.3rem;
+      margin-bottom: 2px;
+    }
+
+    .attendee .role {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    .attendee .bio {
+      font-size: 0.98rem;
+      line-height: 1.6;
+      color: var(--text);
+    }
+
+    .attendee .bio a {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      text-decoration-color: var(--accent-light);
+      text-decoration-thickness: 1px;
+    }
+
+    .attendee .bio a:hover {
+      text-decoration-color: var(--text);
+    }
+
+    /* ---- CTA ---- */
+
+    .cta {
+      margin-top: 56px;
+      padding: 40px;
+      background: #f2efe9;
+      border-radius: 2px;
+      text-align: center;
+    }
+
+    .cta p {
+      margin-bottom: 1.2em;
+    }
+
+    .cta a.inline {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: var(--accent-light);
+    }
+
+    .cta a.inline:hover {
+      color: var(--text);
+      text-decoration-color: var(--text);
+    }
+
+    /* ---- Figures ---- */
+
+    figure {
+      margin: 0;
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    figure figcaption {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      color: var(--text-secondary);
+      margin-top: 10px;
+      letter-spacing: 0.01em;
+    }
+
+    /* ---- Partnership note ---- */
+
+    .partnership {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      letter-spacing: 0.01em;
+    }
+
+    /* ---- Footer ---- */
+
+    footer {
+      padding: 56px 0 80px;
+      text-align: center;
+    }
+
+    footer p {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: var(--text-secondary);
+      letter-spacing: 0.02em;
+    }
+
+    footer a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    footer a:hover {
+      color: var(--text);
+      border-color: var(--text);
+    }
+
+    /* ---- Responsive ---- */
+
+    @media (max-width: 600px) {
+      html { font-size: 17px; }
+      .rule { margin: 40px 0; }
+      .attendee img { width: 88px; height: 88px; }
+      .cta {
+        padding: 28px clamp(20px, 4vw, 48px);
+        margin-left: calc(-1 * clamp(20px, 4vw, 48px));
+        margin-right: calc(-1 * clamp(20px, 4vw, 48px));
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <figure class="hero-img">
+        <img src="assets/event/stgregorys-dancing-saints.webp" alt="The Dancing Saints icon mural in the rotunda of St Gregory of Nyssa Episcopal Church, a ring of dancing figures around a central image of Christ">
+        <figcaption>The Dancing Saints icon by Mark Dukes, in the rotunda of St&nbsp;Gregory of Nyssa, where the summit will be held.</figcaption>
+      </figure>
+
+      <p class="eyebrow">A one-day summit</p>
+      <h1>How Then Shall We Live?</h1>
+      <p class="subtitle">Meaning in the age of AI</p>
+
+      <p class="meta">
+        <strong>Tuesday, 7 July 2026</strong><span class="sep">&middot;</span>10am&ndash;6pm<br>
+        St&nbsp;Gregory of Nyssa Episcopal Church<span class="sep">&middot;</span>Potrero Hill, San&nbsp;Francisco<br>
+        By invitation
+      </p>
+
+      <!-- TODO(Jessica): replace href with your Luma (or Partiful) event link before publishing. -->
+      <a class="button" href="#register">Register</a>
+    </header>
+
+    <hr class="rule">
+
+    <section>
+      <div class="epigraph">
+        <blockquote>One way of framing this issue is in terms of &ldquo;the meaning of life&rdquo;, Luc Ferry&rsquo;s &ldquo;le sens du sens&rdquo;, the basic point which gives real significance to our lives. Almost every action of ours has a point; we&rsquo;re trying to get to work, or to find a place to buy a bottle of milk after hours. But we can stop and ask why we&rsquo;re doing these things, and that points us beyond to the significance of these significances. The issue may arise for us in a crisis, where we feel that what has been orienting our life up to now lacks real value, weight. So a successful doctor may desert a highly paid and technically demanding position, and go off with M&eacute;decins Sans Fronti&egrave;res to Africa, with a sense that this is really significant. A crucial feature of the malaise of immanence is the sense that all these answers are fragile, or uncertain; that a moment may come, where we no longer feel that our chosen path is compelling, or cannot justify it to ourselves or others. There is a fragility of meaning, analogous to the existential fragility we always live with: that suddenly an accident, earthquake, flood, a fatal disease, some terrible betrayal, may jolt us off our path of life, definitively and without return. Only the fragility that I am talking about concerns the significance of it all; the path is still open, possible, supported by circumstances, the doubt concerns its worth.</blockquote>
+        <cite>Charles Taylor, <em>A Secular Age</em></cite>
+      </div>
+    </section>
+
+    <hr class="rule">
+
+    <section>
+      <h2>The Question</h2>
+
+      <!-- NOTE(Jessica): a short, in-your-own-voice paragraph belongs here, introducing why
+           you're convening this. Keep it to 3-5 sentences. I've left the framing questions below,
+           drawn from your planning doc, as the backbone of the section. -->
+
+      <ul class="questions">
+        <li>What does it look like to live a meaningful life in a world with AI?</li>
+        <li>And what does it look like for a community, whether a congregation, a city, or a family, to do the same?</li>
+      </ul>
+
+      <p style="margin-top: 32px;">We are bringing together people shepherding communities through this change and people building the technology driving it, for a day of talks, debate, and conversation. Some sessions will be recorded and shared; most of the day is off the record.</p>
+    </section>
+
+    <hr class="rule">
+
+    <section>
+      <h2>The Day</h2>
+
+      <ul class="schedule">
+        <li><span class="time">10&ndash;11</span><span class="what">Short talks: the question answered from several perspectives</span></li>
+        <li><span class="time">11&ndash;1</span><span class="what">A debate on a single question, moderated by April Lawson</span></li>
+        <li><span class="time">1&ndash;3</span><span class="what">A long lunch, with good food and good company</span></li>
+        <li><span class="time">3&ndash;5</span><span class="what">Structured, deeper conversation in smaller groups</span></li>
+        <li><span class="time">5&ndash;6</span><span class="what">Cocktail hour, thanks, and a close</span></li>
+      </ul>
+
+      <!-- NOTE(Jessica): the schedule above is pulled from your planning doc and is easy to adjust.
+           Add a sentence here if you want to set expectations about format or tone. -->
+    </section>
+
+    <hr class="rule">
+
+    <section>
+      <h2>The Place</h2>
+
+      <p>St&nbsp;Gregory of Nyssa is an Episcopal church in Potrero Hill, designed by the architect John Goldman and completed in 1995.</p>
+
+      <figure style="margin-top: 32px;">
+        <img src="assets/event/stgregorys-congregation.webp" alt="People gathered and talking together beneath the Dancing Saints mural in the rotunda of St Gregory of Nyssa">
+      </figure>
+    </section>
+
+    <hr class="rule">
+
+    <section>
+      <h2>Attending</h2>
+
+      <ul class="attendees">
+
+        <li class="attendee">
+          <img src="assets/event/april-lawson.jpg" alt="April Lawson">
+          <div>
+            <p class="name">April Lawson</p>
+            <p class="role">Debate &amp; dialogue &middot; ex-Braver Angels</p>
+            <p class="bio">April founded and built <a href="https://braverangels.org" target="_blank" rel="noopener">Braver Angels</a>&rsquo; national debate program, growing it from a single event to thousands of participants a month, and co-directs the <a href="https://www.goacta.org/initiatives/college-debates/" target="_blank" rel="noopener">College Debates &amp; Discourse</a> alliance. She spent four years researching and editing for <a href="https://www.nytimes.com/by/david-brooks" target="_blank" rel="noopener">David Brooks</a> at the New York Times, and now consults on debate and dialogue. She will moderate the summit&rsquo;s central debate.</p>
+          </div>
+        </li>
+
+        <li class="attendee">
+          <img src="assets/event/peter-levenstrong.jpg" alt="The Rev. Peter Levenstrong">
+          <div>
+            <p class="name">The Rev. Peter Levenstrong</p>
+            <p class="role">Associate Rector, St&nbsp;Gregory of Nyssa</p>
+            <p class="bio">Peter is Associate Rector at <a href="https://saintgregorys.org" target="_blank" rel="noopener">St&nbsp;Gregory of Nyssa</a>, where he created &ldquo;Living Stories,&rdquo; an intergenerational, Godly Play-inspired model of preaching. A thoughtful voice on faith and technology, he co-hosts the <a href="https://aichurchtoolkit.com" target="_blank" rel="noopener">AI Church Toolkit</a> podcast and writes on using AI to deepen, rather than replace, human relationship in ministry.</p>
+          </div>
+        </li>
+
+        <li class="attendee">
+          <img src="assets/event/malcolm-ocean.jpg" alt="Malcolm Ocean">
+          <div>
+            <p class="name">Malcolm Ocean</p>
+            <p class="role">Organizational development, Softmax</p>
+            <p class="bio">Malcolm writes on trust and works on organizational development at <a href="https://softmax.com" target="_blank" rel="noopener">Softmax</a>, a San&nbsp;Francisco AI-alignment startup pursuing &ldquo;organic alignment.&rdquo; His long-running blog <a href="https://malcolmocean.com" target="_blank" rel="noopener">malcolmocean.com</a> explores agency, coordination, and how groups of people, and minds, can actually think and act together well.</p>
+          </div>
+        </li>
+
+        <li class="attendee">
+          <img src="assets/event/jessica-ocean.jpg" alt="Jessica Ocean">
+          <div>
+            <p class="name">Jessica Ocean</p>
+            <p class="role">Open Immanence Society | Psych Crisis</p>
+            <p class="bio">Jess founded <a href="https://psychcrisis.org" target="_blank" rel="noopener">Psych Crisis</a> in 2021 with a grant from Georgetown&rsquo;s <a href="https://www.mercatus.org/emergent-ventures" target="_blank" rel="noopener">Emergent Ventures</a>, after losing her brother to suicide in the mental-health crisis system, and serves as its chairman and former executive director. She is responsible for the obsessive inclusion of references to the work of philosopher Charles Taylor that you may notice throughout the day. </p>
+          </div>
+        </li>
+
+      </ul>
+
+      <!-- NOTE(Jessica): only confirmed attendees are listed, per your instruction.
+           Add more <li class="attendee"> blocks as people confirm. -->
+    </section>
+
+    <hr class="rule">
+
+    <section id="register">
+      <div class="cta">
+        <!-- TODO(Jessica): replace href with your Luma (or Partiful) event link. -->
+        <a class="button" href="#">Register</a>
+        <p class="partnership" style="margin-top: 28px; margin-bottom: 0;">Convened by the Open Immanence Society, in partnership with St&nbsp;Gregory of Nyssa Episcopal Church. Questions: <a class="inline" href="mailto:hello@openimmanence.org">hello@openimmanence.org</a></p>
+      </div>
+    </section>
+
+    <hr class="rule">
+
+    <footer>
+      <p><a href="/jessicaocean/">Jessica Ocean</a>, Founder</p>
+      <p>&copy; 2026 <a href="https://openimmanence.org">Open Immanence Society</a></p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
